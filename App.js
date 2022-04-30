@@ -11,10 +11,8 @@ export default function App() {
       method: 'get',
       url: 'https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin',
     }).then((response) => {
-      // console.log(response.data.companies);
       setData(response.data.companies);
       console.log(data)
-      // console.log(response.data.companies.map((a) => a.name))
     });
   },[])
 
